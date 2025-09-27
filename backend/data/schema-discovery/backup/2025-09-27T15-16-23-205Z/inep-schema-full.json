@@ -1,0 +1,6415 @@
+{
+  "schemaName": "inep",
+  "totalTables": 87,
+  "tables": [
+    {
+      "name": "capes_cursos_bruto",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "an_base",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nm_grande_area_conhecimento",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_area_conhecimento",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_subarea_conhecimento",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_especialidade",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cd_area_avaliacao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_area_avaliacao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cd_entidade_capes",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cd_entidade_emec",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "sg_entidade_ensino",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_entidade_ensino",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cs_status_juridico",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "ds_dependencia_administrativa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "ds_organizacao_academica",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_regiao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "sg_uf_programa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_municipio_programa_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cd_programa_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_programa_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cd_curso_ppg",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_curso",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_grau_curso",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cd_conceito_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "an_inicio_previsto",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ds_situacao_curso",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "dt_situacao_curso",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "id_add_foto_programa_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "id_add_foto_programa",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "capes_programas_bruto",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "an_base",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nm_grande_area_conhecimento",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_area_conhecimento",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_area_basica",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_subarea_conhecimento",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_especialidade",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cd_area_avaliacao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_area_avaliacao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cd_entidade_capes",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cd_entidade_emec",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "sg_entidade_ensino",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_entidade_ensino",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cs_status_juridico",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "ds_dependencia_administrativa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "ds_organizacao_academica",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_regiao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_municipio_programa_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_modalidade_programa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cd_programa_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_programa_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_programa_idioma",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "sg_uf_programa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nm_grau_programa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cd_conceito_programa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "ano_inicio_programa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "an_inicio_curso",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "in_rede",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "sg_entidade_ensino_rede",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "ds_situacao_programa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "dt_situacao_programa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "id_add_foto_programa_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "id_add_foto_programa",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ds_clientela_quadrienal_2017",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "an_inicio_programa",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "censo_categorias_administrativas",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id_categoria_administrativa",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "descr_categoria_administrativa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "descr_cat_adm_agrupada",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "id_categoria_administrativa"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "censo_cine_area_detalhada",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "cod_cine_area_detalhada",
+          "dataType": "character",
+          "nullable": false
+        },
+        {
+          "name": "descr_cine_area_detalhada",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cod_cine_area_especifica",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "cod_cine_area_detalhada"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "censo_cine_area_especifica",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "cod_cine_area_especifica",
+          "dataType": "character",
+          "nullable": false
+        },
+        {
+          "name": "descr_cine_area_especifica",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cod_cine_area_geral",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "cod_cine_area_especifica"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "censo_cine_area_geral",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "cod_cine_area_geral",
+          "dataType": "character",
+          "nullable": false
+        },
+        {
+          "name": "descr_cine_area_geral",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "cod_cine_area_geral"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "censo_cine_rotulo",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "cod_cine_rotulo",
+          "dataType": "character",
+          "nullable": false
+        },
+        {
+          "name": "descr_cine_rotulo",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cod_cine_area_detalhada",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "area_tcu_1",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "area_tcu_2",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "cod_cine_rotulo"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "censo_curso_vagas_bruto",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano_censo",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_regiao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_regiao",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_uf",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "sg_uf",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_uf",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_municipio",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_municipio",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_capital",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_dimensao",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_organizacao_academica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_rede",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_categoria_administrativa",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_comunitaria",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_confessional",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_curso",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_cine_rotulo",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_cine_rotulo",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_cine_area_geral",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_cine_area_geral",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_cine_area_especifica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_cine_area_especifica",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_cine_area_detalhada",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_cine_area_detalhada",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "tp_grau_academico",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_gratuito",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_modalidade_ensino",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_nivel_academico",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_vg_total",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_vg_total_diurno",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_vg_total_noturno",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_vg_total_ead",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_vg_nova",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_vg_proc_seletivo",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_vg_remanesc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_vg_prog_especial",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_inscrito_total",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_inscrito_total_diurno",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_inscrito_total_noturno",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_inscrito_total_ead",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_insc_vg_nova",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_insc_proc_seletivo",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_insc_vg_remanesc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_insc_vg_prog_especial",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_fem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_masc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_diurno",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_noturno",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_vg_nova",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_vestibular",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_enem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_avaliacao_seriada",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_selecao_simplifica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_egr",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_outro_tipo_selecao",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_proc_seletivo",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_vg_remanesc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_vg_prog_especial",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_outra_forma",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_0_17",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_18_24",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_25_29",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_30_34",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_35_39",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_40_49",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_50_59",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_60_mais",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_branca",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_preta",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_parda",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_amarela",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_indigena",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_cornd",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_fem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_masc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_diurno",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_noturno",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_0_17",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_18_24",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_25_29",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_30_34",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_35_39",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_40_49",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_50_59",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_60_mais",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_branca",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_preta",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_parda",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_amarela",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_indigena",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_cornd",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_fem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_masc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_diurno",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_noturno",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_0_17",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_18_24",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_25_29",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_30_34",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_35_39",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_40_49",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_50_59",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_60_mais",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_branca",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_preta",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_parda",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_amarela",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_indigena",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_cornd",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_nacbras",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_nacestrang",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_nacbras",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_nacestrang",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_nacbras",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_nacestrang",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_aluno_deficiente",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_deficiente",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_deficiente",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_deficiente",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_financ",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_financ_reemb",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_fies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_rpfies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_financ_reemb_outros",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_financ_nreemb",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_prounii",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_prounip",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_nrpfies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_financ_nreemb_outros",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_financ",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_financ_reemb",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_fies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_rpfies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_financ_reemb_outros",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_financ_nreemb",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_prounii",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_prounip",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_nrpfies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_financ_nreemb_outros",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_financ",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_financ_reemb",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_fies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_rpfies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_financ_reemb_outros",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_financ_nreemb",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_prounii",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_prounip",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_nrpfies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_financ_nreemb_outros",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_reserva_vaga",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_rvredepublica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_rvetnico",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_rvpdef",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_rvsocial_rf",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_rvoutros",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_reserva_vaga",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_rvredepublica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_rvetnico",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_rvpdef",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_rvsocial_rf",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_rvoutros",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_reserva_vaga",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_rvredepublica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_rvetnico",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_rvpdef",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_rvsocial_rf",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_rvoutros",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_sit_trancada",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_sit_desvinculado",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_sit_transferido",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_sit_falecido",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_procescpublica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_procescprivada",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_procnaoinformada",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_procescpublica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_procescprivada",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_procnaoinformada",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_procescpublica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_procescprivada",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_procnaoinformada",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_parfor",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_parfor",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_parfor",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_parfor",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_apoio_social",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_apoio_social",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_apoio_social",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_apoio_social",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ativ_extracurricular",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_ativ_extracurricular",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_ativ_extracurricular",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_ativ_extracurricular",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mob_academica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ing_mob_academica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_mob_academica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_conc_mob_academica",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "censo_cursos",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "cod_curso",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "nome_curso",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cod_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "cod_municipio",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "id_grau_academico",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "id_modalidade_ensino",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "id_nivel_academico",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "id_atributo_ingresso",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "dt_inicio_funcionamento",
+          "dataType": "date",
+          "nullable": true
+        },
+        {
+          "name": "cod_area",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "turno_curso",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "cc_ano",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "cc_faixa",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "cod_cine_rotulo",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "cod_area_tcu",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "id_centro_ufsm",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nome_curso_ajustado",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "id_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "cod_cine_rotulo_n",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cod_cine_area_geral",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "tempo_integralizacao_anos",
+          "dataType": "numeric",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "cod_curso"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "censo_cursos_bkp",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "cod_curso",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "nome_curso",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cod_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "cod_municipio",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "id_grau_academico",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "id_modalidade_ensino",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "id_nivel_academico",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "id_atributo_ingresso",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "dt_inicio_funcionamento",
+          "dataType": "date",
+          "nullable": true
+        },
+        {
+          "name": "cod_area",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "turno_curso",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "cc_ano",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "cc_faixa",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "cod_cine_rotulo",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "cod_area_tcu",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "id_centro_ufsm",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nome_curso_ajustado",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "id_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "cod_cine_rotulo_n",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cod_cine_area_geral",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "tempo_integralizacao_anos",
+          "dataType": "numeric",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "cod_curso"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "censo_graus_academicos",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id_grau_academico",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "descr_grau_academico",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "id_grau_academico"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "censo_ies",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "cod_ies",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "nome_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "sigla_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cod_mantenedora",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "id_categoria_administrativa",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "id_organizacao_academica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "cod_municipio",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "in_capital",
+          "dataType": "smallint",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "cod_ies"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "censo_ies_bruto",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano_censo",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_regiao_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_regiao_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_uf_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "sg_uf_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_uf_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_municipio_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_municipio_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_capital_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_mesorregiao_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_mesorregiao_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_microrregiao_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_microrregiao_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_organizacao_academica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_categoria_administrativa",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_mantenedora",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_mantenedora",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "sg_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "ds_endereco_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "ds_numero_endereco_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "ds_complemento_endereco_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "no_bairro_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nu_cep_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_tec_total",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_tec_fundamental_incomp_fem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_tec_fundamental_incomp_masc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_tec_fundamental_comp_fem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_tec_fundamental_comp_masc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_tec_medio_fem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_tec_medio_masc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_tec_superior_fem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_tec_superior_masc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_tec_especializacao_fem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_tec_especializacao_masc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_tec_mestrado_fem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_tec_mestrado_masc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_tec_doutorado_fem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_tec_doutorado_masc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_acesso_portal_capes",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_acesso_outras_bases",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_assina_outra_base",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_repositorio_institucional",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_busca_integrada",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_servico_internet",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_participa_rede_social",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_catalogo_online",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_periodico_eletronico",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_livro_eletronico",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_total",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_exe",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_femi",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_masc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_sem_grad",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_grad",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_esp",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_mest",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_dout",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_int",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_int_de",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_int_sem_de",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_parc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_hor",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_0_29",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_30_34",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_35_39",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_40_44",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_45_49",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_50_54",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_55_59",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_60_mais",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_branca",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_preta",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_parda",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_amarela",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_indigena",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_cor_nd",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_bra",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_est",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_com_deficiencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_comunitaria",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "in_confessional",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "tp_rede",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "co_projeto",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_local_oferta",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_local_oferta",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "censo_modalidades_ensino",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id_modalidade_ensino",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "descr_modalidade_ensino",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "id_modalidade_ensino"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "censo_niveis_academicos",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id_nivel_academico",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "descr_nivel_academico",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "id_nivel_academico"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "censo_organizacoes_academicas",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id_organizacao_academica",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "descr_organizacao_academica",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "descr_org_acad_agrupada",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "id_organizacao_academica"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "cesta_dimensoes",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "descr_dimensao",
+          "dataType": "character varying",
+          "nullable": false
+        }
+      ],
+      "primaryKeys": [
+        "id"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "cesta_indicadores",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "nome_indicador",
+          "dataType": "character varying",
+          "nullable": false
+        },
+        {
+          "name": "descr_indicador",
+          "dataType": "character varying",
+          "nullable": false
+        },
+        {
+          "name": "id_dimensao",
+          "dataType": "integer",
+          "nullable": false
+        }
+      ],
+      "primaryKeys": [
+        "id"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "cesta_indicadores_visualizacoes",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "id_indicador",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "id_visualizacao",
+          "dataType": "integer",
+          "nullable": false
+        }
+      ],
+      "primaryKeys": [
+        "id"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "cesta_visualizacao_indicadores",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "descr_visualizacao",
+          "dataType": "character varying",
+          "nullable": false
+        },
+        {
+          "name": "tipo_visualizacao",
+          "dataType": "character varying",
+          "nullable": false
+        },
+        {
+          "name": "forma",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "id"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "dados_cpc",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "conc_inscritos",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "conc_participantes",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "n_bruta_fg",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "n_bruta_ce",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "enade_continuo",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "conc_part_n_enen",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "perc_conc_part_n_enem",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nb_idd",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "np_idd",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nb_org_did_pedag",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "np_org_did_pedag",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nb_infra_fisica",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "np_infra_fisica",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nb_ampliacao_formacao",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "np_ampliacao_formacao",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nb_mestres",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "np_mestres",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nb_doutores",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "np_doutores",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nb_regime_trab",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "np_regime_trab",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "cpc_continuo",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "cpc_faixa",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "n_padronizada_fg",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "n_padronizada_ce",
+          "dataType": "numeric",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "dados_cpc_bkp",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "conc_inscritos",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "conc_participantes",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "n_bruta_fg",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "n_bruta_ce",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "enade_continuo",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "conc_part_n_enen",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "perc_conc_part_n_enem",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nb_idd",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "np_idd",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nb_org_did_pedag",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "np_org_did_pedag",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nb_infra_fisica",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "np_infra_fisica",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nb_ampliacao_formacao",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "np_ampliacao_formacao",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nb_mestres",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "np_mestres",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nb_doutores",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "np_doutores",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nb_regime_trab",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "np_regime_trab",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "cpc_continuo",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "cpc_faixa",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "dados_cpc_brutos",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "cod_area",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "descr_area",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cod_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nome_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "sigla_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "org_academica",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cat_administrativa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cod_curso",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "modalidade",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cod_municipio",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nome_municipio",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "uf",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "n_conclu_inscritos",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "n_conclu_participantes",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nota_bruta_fg",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nota_padr_fg",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nota_bruta_ce",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nota_padr_ce",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "conceito_enade_cont",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "num_conclui_part_nota_enem",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "prop_conclui_part_nota_enem",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nota_bruta_idd",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nota_padr_idd",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nota_bruta_org_did_pegago",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nota_padr_org_did_pegago",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nota_bruta_infra",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nota_padr_infra",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nota_bruta_oportunidade",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nota_padr_oportunidade",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nota_bruta_mestres",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nota_padr_mestres",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nota_bruta_doutores",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nota_padr_doutores",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nota_bruta_reg_trabalho",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nota_padr_reg_trabalho",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "cpc_continuo",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "cpc_faixa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nr_docentes",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "grau_academico",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "dados_enade",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "enade_continuo",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "enade_faixa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "n_bruta_fg",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "n_padronizada_fg",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "n_bruta_ce",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "n_padronizada_ce",
+          "dataType": "numeric",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "dados_enade_percepcao_respostas",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "questao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "opcao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "resposta",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "id",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "questao_aj",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "dados_idd",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "idd_bruta",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "idd_continuo",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "idd_faixa",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "dados_ies_docentes",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano_censo",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_total",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_exe",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_sem_grad",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_grad",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_esp",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_mest",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_dout",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_int",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_int_de",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_int_sem_de",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_parc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_doc_ex_hor",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "dados_igc",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "n_cursos_cpc_trienio",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "alfa",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "conc_med_graduacao",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "beta",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "conc_med_mestrado",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "gama",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "conc_med_doutorado",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "igc_continuo",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "igc_faixa",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "dados_percepcao_enade",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i27",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i28",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i29",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i30",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i31",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i32",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i33",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i34",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i35",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i36",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i37",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i38",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i39",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i40",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i41",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i42",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i43",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i44",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i45",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i46",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i47",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i48",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i49",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i50",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i51",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i52",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i53",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i54",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i55",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i56",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i57",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i58",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i59",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i60",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i61",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i62",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i63",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i64",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i65",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i66",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i67",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "qe_i68",
+          "dataType": "smallint",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "dados_percepcao_enade_questoes",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id_questao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "descricao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "grupo",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "questao_aj",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "questao",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "dm_aluno",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "co_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_categoria_administrativa",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_organizacao_academica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_nivel_academico",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_modalidade_ensino",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_grau_academico",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_vinculo_aluno_curso",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_aluno",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_aluno_situacao",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ing_processo_seletivo",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ing_vestibular",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ing_enem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ing_outra_forma_selecao",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ing_processo_outras_formas",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ing_convenio_pecg",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ing_outras_formas_ingresso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_apoio_social",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_apoio_alimentacao",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_apoio_moradia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_apoio_transporte",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_apoio_material_didatico",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_apoio_bolsa_permanencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_apoio_bolsa_trabalho",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_aluno_deficiencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_cegueira",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_baixa_visao",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_surdez",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_def_auditiva",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_def_fisica",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_surdocegueira",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_def_multipla",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_def_mental",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_reserva_vagas",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_reserva_ensino_publico",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_reserva_etnico",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_reserva_deficiencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_reserva_renda_familiar",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_reserva_outros",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_atividade_complementar",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ativ_pesquisa_rem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ativ_pesquisa_nao_rem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ativ_extensao_rem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ativ_extensao_nao_rem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ativ_monitoria_rem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ativ_monitoria_nao_rem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ativ_estag_n_obrig_rem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ativ_estag_n_obrig_nao_rem",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_financ_estudantil",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_financ_externas",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_financ_externas_reemb",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_financ_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_financ_ies_reemb",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_financ_municipal",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_financ_municipal_reemb",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_financ_estadual",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_financ_estadual_reemb",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_financ_outros",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_financ_outros_reemb",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_prouni_integral",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_prouni_parcial",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_fies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_sexo_aluno",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_cor_raca_aluno",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_nacionalidade_aluno",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_pais_origem_aluno",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_ano_aluno_nasc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_dia_aluno_nasc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_mes_aluno_nasc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_idade_aluno",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_matricula",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_concluinte",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "in_ingresso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "dt_ingresso_curso",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "ano_ingresso",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "emec_instituicoes",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "id",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "sg_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cnpj",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "telefone",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "site",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "email",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "endereco",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "no_municipio",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "sg_uf",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "dt_criacao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "ci",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ano_ci",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ci_ead",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ano_ci_ead",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "igc",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ano_igc",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "enade_dic_aux",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "arquivo",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "variaveis",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "enade_dic_aux_tmp",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "arquivo",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "campo",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "fluxo_tda",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "co_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "tp_categoria_administrativa",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "tp_organizacao_academica",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_curso",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_regiao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_uf",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_municipio",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "tp_grau_academico",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "tp_modalidade_ensino",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "co_cine_rotulo",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "no_cine_rotulo",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_cine_area_geral",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "no_cine_area_geral",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nu_ano_ingresso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_ano_referencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_prazo_integralizacao",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_ano_integralizacao",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_prazo_acompanhamento",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_ano_maximo_acompanhamento",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ingressante",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_permanencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_concluinte",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_desistencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_falecido",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tap",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "tca",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "tda",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "tcan",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "tada",
+          "dataType": "numeric",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "ibge_demografia_idade_grupos",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "idade",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "grupo",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "grupo_ajustado",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "ibge_demografia_por_idade_bruto",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "cd_mun",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "idade",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "quantidade",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "idhms",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "cod_ibge",
+          "dataType": "character",
+          "nullable": false
+        },
+        {
+          "name": "ano",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "idhm",
+          "dataType": "numeric",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "cod_ibge",
+        "ano"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "ies_area_cine_pos",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "co_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "num_areas_cine",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "classificacao_pos",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "igc_bruto",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "cod_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "sigla_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "uf_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "municipio",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "dependencia_adm",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "org_academica",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "n_curso_enade_ult_3_anos",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "n_curso_com_cpc_ult_3_anos",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "conc_medio_graduacao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "conc_medio_mestrado",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "conc_medio_doutorado",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "porc_grad_equivalente",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "porc_mestres_equivalente",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "igc_continuo",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "igc_faixa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "arquivo_origem",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "observacao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "porc_doutores_equivalente",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "ano_arquivo",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "igc_fatos",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "ano",
+          "dataType": "smallint",
+          "nullable": false
+        },
+        {
+          "name": "cod_ies",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "num_cursos_cpc",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "proporcao_graduandos",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "conceito_medio_graduacao",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "proporcao_mestrandos_equivalente",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "conceito_medio_mestrado",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "proporcao_doutorandos_equivalente",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "conceito_medio_doutorado",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "igc_continuo",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "igc_faixa",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "ind_fluxo_ies",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "periodo",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_ano_ingresso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_ano_referencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_prazo_integralizacao",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "nu_ano_integralizacao",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_prazo_acompanhamento",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "nu_ano_maximo_acompanhamento",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ingressante",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_permanencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_concluinte",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_desistencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_falecido",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "taxa_permanencia",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "taxa_conclusao_acumulada",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "taxa_desistencia_acumulada",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "taxa_conclusao_anual",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "taxa_desistencia_anual",
+          "dataType": "numeric",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "ind_fluxo_ies_bkp",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "periodo",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_ano_ingresso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_ano_referencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_prazo_integralizacao",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "nu_ano_integralizacao",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_prazo_acompanhamento",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "nu_ano_maximo_acompanhamento",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ingressante",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_permanencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_concluinte",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_desistencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_falecido",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "taxa_permanencia",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "taxa_conclusao_acumulada",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "taxa_desistencia_acumulada",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "taxa_conclusao_anual",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "taxa_desistencia_anual",
+          "dataType": "numeric",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "ind_fluxo_ies_tda",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "co_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "tp_categoria_administrativa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "tp_organizacao_academica",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "no_curso",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_uf",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_municipio",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_grau_academico",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_modalidade_ensino",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "co_cine_rotulo",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "no_cine_rotulo",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nu_ano_ingresso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_ano_referencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_ingressante",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_permanencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_concluinte",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_desistencia",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_falecido",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tda",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "tp_rede",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "sigla_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nome_ies",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "nome_curso",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "no_regiao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "capital",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "matriculas_municipio",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano_censo",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "cod_municipio",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_0_17",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_18_24",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_25_29",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_30_34",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_35_39",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_40_49",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_50_59",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qt_mat_60_mais",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "mesoregioes_ibge",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "cod_mesoregiao_ibge",
+          "dataType": "character",
+          "nullable": false
+        },
+        {
+          "name": "num_mesoregiao_ibge",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "nome_mesoregiao_ibge",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cod_uf_ibge",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "nome_mesoregiao_ibge_sem_acento",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "cod_mesoregiao_ibge"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq1",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_ies",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_categad",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_orgacad",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_grupo",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_modalidade",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_munic_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_uf_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_regiao_curso",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq10",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i04",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq11",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i05",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq12",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i06",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq13",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i07",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq14",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i08",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq15",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i09",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq16",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i10",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq17",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i11",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq18",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i12",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq19",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i13",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq2",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ano_fim_em",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ano_in_grad",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_turno_graduacao",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq20",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i14",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq21",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i15",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq22",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i16",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq23",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i17",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq24",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i18",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq25",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i19",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq26",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i20",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq27",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i21",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq28",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i22",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq29",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i23",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq3",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_item_ofg",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_item_ofg_z",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_item_ofg_x",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_item_ofg_n",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_item_oce",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_item_oce_z",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_item_oce_x",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_item_oce_n",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ds_vt_gab_ofg_fin",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "ds_vt_gab_oce_fin",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "ds_vt_esc_ofg",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "ds_vt_ace_ofg",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "ds_vt_esc_oce",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "ds_vt_ace_oce",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "tp_pres",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_pr_ger",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_pr_ob_fg",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_pr_di_fg",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_pr_ob_ce",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_pr_di_ce",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_sfg_d1",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_sfg_d2",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_sce_d1",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_sce_d2",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_sce_d3",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nt_ger",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nt_fg",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nt_obj_fg",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nt_dis_fg",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nt_fg_d1",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nt_fg_d1_pt",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nt_fg_d1_ct",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nt_fg_d2",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nt_fg_d2_pt",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nt_fg_d2_ct",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nt_ce",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nt_obj_ce",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nt_dis_ce",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nt_ce_d1",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nt_ce_d2",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nt_ce_d3",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "co_rs_i1",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "co_rs_i2",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "co_rs_i3",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "co_rs_i4",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "co_rs_i5",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "co_rs_i6",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "co_rs_i7",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "co_rs_i8",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "co_rs_i9",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq30",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i24",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq31",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i25",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq32",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i26",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq33",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i69",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i70",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i71",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i72",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i73",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i74",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i75",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i76",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i77",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i78",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i79",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq4",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i27",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i28",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i29",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i30",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i31",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i32",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i33",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i34",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i35",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i36",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i37",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i38",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i39",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i40",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i41",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i42",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i43",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i44",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i45",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i46",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i47",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i48",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i49",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i50",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i51",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i52",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i53",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i54",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i55",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i56",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i57",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i58",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i59",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i60",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i61",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i62",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i63",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i64",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i65",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i66",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i67",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i68",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq5",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "tp_sexo",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq6",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "nu_idade",
+          "dataType": "integer",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq7",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i01",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq8",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i02",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_arq9",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "nu_ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "co_curso",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "qe_i03",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_questoes",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "cod_questao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "questao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "questao_ajustado",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microdados_enade_respostas",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "ano",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "cod_questao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "questao",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "alternativa",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "resposta",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "microregioes_ibge",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "cod_microregiao_ibge",
+          "dataType": "character",
+          "nullable": false
+        },
+        {
+          "name": "num_microregiao_ibge",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "nome_microregiao_ibge",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cod_mesoregiao_ibge",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "nome_microregiao_ibge_sem_acento",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "cod_microregiao_ibge"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "municipios_ibge",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "cod_municipio",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "cod_ibge",
+          "dataType": "character",
+          "nullable": false
+        },
+        {
+          "name": "nome_municipio",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cod_microregiao_ibge",
+          "dataType": "character",
+          "nullable": true
+        },
+        {
+          "name": "latitude",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "longitude",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "populacao",
+          "dataType": "integer",
+          "nullable": true
+        },
+        {
+          "name": "densidade",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nome_municipio_sem_acento",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "cod_ibge"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "pibs_per_capita",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "cod_ibge",
+          "dataType": "character",
+          "nullable": false
+        },
+        {
+          "name": "ano",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "pib_per_capita",
+          "dataType": "numeric",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "cod_ibge",
+        "ano"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "regioes_ibge",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "cod_regiao_ibge",
+          "dataType": "smallint",
+          "nullable": false
+        },
+        {
+          "name": "descr_regiao_ibge",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "sigla_regiao_ibge",
+          "dataType": "character",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "cod_regiao_ibge"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "uf_ibge",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "uf_ibge",
+          "dataType": "character",
+          "nullable": false
+        },
+        {
+          "name": "num_uf_ibge",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "nome_uf_ibge",
+          "dataType": "character varying",
+          "nullable": true
+        },
+        {
+          "name": "cod_regiao_ibge",
+          "dataType": "smallint",
+          "nullable": true
+        },
+        {
+          "name": "latitude",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "longitude",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "nome_uf_ibge_sem_acento",
+          "dataType": "character varying",
+          "nullable": true
+        }
+      ],
+      "primaryKeys": [
+        "uf_ibge"
+      ],
+      "estimatedRows": "0"
+    },
+    {
+      "name": "variaveis_pib_municipios_ibge",
+      "type": "TABLE",
+      "columns": [
+        {
+          "name": "cod_ibge",
+          "dataType": "character",
+          "nullable": false
+        },
+        {
+          "name": "ano",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "cod_variavel",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "variavel",
+          "dataType": "character varying",
+          "nullable": false
+        },
+        {
+          "name": "valor",
+          "dataType": "numeric",
+          "nullable": true
+        },
+        {
+          "name": "cod_unidade_medida",
+          "dataType": "integer",
+          "nullable": false
+        },
+        {
+          "name": "unidade_medida",
+          "dataType": "character varying",
+          "nullable": false
+        }
+      ],
+      "primaryKeys": [
+        "cod_ibge",
+        "ano",
+        "cod_variavel"
+      ],
+      "estimatedRows": "0"
+    }
+  ],
+  "discoveredAt": "2025-09-27T15:04:41.030Z"
+}
