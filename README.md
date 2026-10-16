@@ -1,288 +1,147 @@
-# QueryLab 🧪
+<div align="center">
 
-Uma plataforma moderna para consultas em linguagem natural usando LLMs (Large Language Models) para conversão text-to-SQL em bancos de dados relacionais.
+# 🧪 QueryLab
 
-## 🎯 Visão Geral
+**Ask your database a question. Get a real answer.**
 
-QueryLab é uma plataforma que permite aos usuários fazer consultas em linguagem natural e convertê-las automaticamente para SQL, facilitando a análise de dados para especialistas e usuários não-técnicos.
+QueryLab turns plain-language questions into SQL, runs them against your database, and explains the result back in human language — so anyone can explore data without knowing a single `JOIN`.
 
-### ✨ Características Principais
+[![Next.js](https://img.shields.io/badge/Next.js-15-000000?logo=next.js&logoColor=white)](#)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](#)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](#)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)](#)
+[![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)](#)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)](#)
 
-- 🗣️ **Consultas em Linguagem Natural**: Digite perguntas em português e obtenha SQL automaticamente
-- 🤖 **Múltiplos Modelos LLM**: Suporte para GPT-4, GPT-3.5, Claude 3 e outros
-- 💬 **Interface de Chat**: Conversas em tempo real com histórico de sessões
-- 🎨 **Temas Modernos**: Modo claro, escuro e alto contraste
-- 📊 **Visualização de Resultados**: Tabelas formatadas e exportação de dados
-- 🔄 **WebSocket**: Comunicação em tempo real
-- 🗄️ **Múltiplos Bancos**: JSON Server (desenvolvimento) e DB2 (produção)
-
-## 🏗️ Arquitetura
-
-### Arquitetura de Microserviços
-
-O QueryLab utiliza uma arquitetura de microserviços para resolver problemas de dependências nativas:
-
-- **Frontend**: Next.js 14 com interface moderna
-- **Backend Principal**: API REST + WebSocket (sem dependências nativas)
-- **DB2 Service**: Microserviço dedicado para consultas IBM DB2
-
-### Frontend (Next.js 14)
-- **Framework**: Next.js 14 com App Router
-- **Linguagem**: TypeScript
-- **Estilização**: Tailwind CSS + Shadcn/ui
-- **Estado**: Zustand
-- **WebSocket**: Socket.io-client
-
-### Backend Principal (Node.js)
-- **Runtime**: Node.js com Express
-- **Linguagem**: TypeScript
-- **WebSocket**: Socket.io
-- **LLM**: Groq SDK (Llama 3, Mixtral)
-- **Banco**: JSON Server (auth/sessões) + HTTP Client para DB2 Service
-
-### DB2 Service (Microserviço)
-- **Runtime**: Node.js com Express
-- **Linguagem**: TypeScript
-- **Banco**: IBM DB2 (driver nativo)
-- **API**: REST endpoints para consultas SQL
-- **Deploy**: Ambiente separado com suporte a dependências nativas
-
-### Dados
-- **Desenvolvimento**: JSON Server (porta 3001)
-- **Produção**: DB2 (via VPN universitária)
-- **Schema**: Dados universitários (universidades, pessoas, cursos, regiões)
-
-## 🚀 Instalação e Execução
-
-### Pré-requisitos
-- Node.js 18+
-- npm ou yarn
-- Git
-
-### 1. Clone o Repositório
-```bash
-git clone <repository-url>
-cd llm-text-to-sql
-```
-
-### 2. Instale as Dependências
-
-#### Frontend
-```bash
-cd frontend
-npm install
-```
-
-#### Backend
-```bash
-cd backend
-npm install
-```
-
-### 3. Configure as Variáveis de Ambiente
-
-#### Backend (.env)
-```env
-# Servidor
-PORT=5000
-NODE_ENV=development
-FRONTEND_URL=http://localhost:3000
-
-# Banco de Dados
-DB_TYPE=postgres
-POSTGRES_URL=http://localhost:3001
-
-# DB2 (Produção)
-DB2_HOST=localhost
-DB2_PORT=50000
-DB2_DATABASE=UNIVDB
-DB2_USERNAME=
-DB2_PASSWORD=
-
-# LLM APIs (Futuro)
-OPENAI_API_KEY=your_key_here
-ANTHROPIC_API_KEY=your_key_here
-```
-
-#### Frontend (.env.local)
-```env
-NEXT_PUBLIC_API_URL=http://localhost:5000/api
-NEXT_PUBLIC_WEBSOCKET_URL=http://localhost:5000
-```
-
-### 4. Execute os Serviços
-
-#### Terminal 1 - JSON Server (Dados Mock)
-```bash
-cd mock-data
-json-server --watch db.json --port 3001
-```
-
-#### Terminal 2 - Backend
-```bash
-cd backend
-npm run dev
-```
-
-#### Terminal 3 - Frontend
-```bash
-cd frontend
-npm run dev
-```
-
-### 5. Acesse a Aplicação
-- **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:5000/api
-- **JSON Server**: http://localhost:3001
-
-## 📖 Como Usar
-
-1. **Acesse** http://localhost:3000
-2. **Crie uma nova sessão** clicando no botão "+"
-3. **Digite sua consulta** em linguagem natural, por exemplo:
-   - "Mostre todas as universidades federais"
-   - "Quantos professores tem na USP?"
-   - "Liste os cursos de ciência da computação"
-4. **Visualize** o SQL gerado e os resultados
-5. **Explore** o histórico de sessões na sidebar
-
-## 🎨 Temas
-
-A aplicação suporta 3 temas:
-- **Claro**: Design limpo e moderno
-- **Escuro**: Cores suaves para uso noturno
-- **Alto Contraste**: Máximo contraste para acessibilidade
-
-Altere o tema usando o seletor no header.
-
-## 🗄️ Schema do Banco de Dados
-
-### Universidades
-- id, nome, sigla, tipo, região, estado, cidade
-- fundação, campus, alunos_total, professores_total
-- cursos_graduacao, cursos_pos_graduacao
-
-### Pessoas
-- id, nome, tipo (professor/aluno/funcionário)
-- universidade_id, departamento, curso
-- titulação, área_pesquisa, email
-
-### Cursos
-- id, nome, tipo, universidade_id
-- departamento, duração, vagas_anuais
-- nota_corte, modalidade
-
-### Regiões
-- id, nome, estados, população
-- universidades_federais, estaduais, privadas
-
-## 🔧 Desenvolvimento
-
-### Estrutura de Pastas
-```
-querylab/
-├── frontend/           # Next.js app
-│   ├── src/
-│   │   ├── app/       # App router
-│   │   ├── components/ # Componentes
-│   │   ├── lib/       # Utilities
-│   │   ├── stores/    # Zustand stores
-│   │   └── types/     # TypeScript types
-├── backend/           # Backend principal (sem IBM DB2)
-│   ├── src/
-│   │   ├── routes/    # Express routes
-│   │   ├── services/  # Business logic
-│   │   ├── adapters/  # Database adapters
-│   │   └── websockets/ # Socket.io handlers
-├── db2-service/       # Microserviço para IBM DB2
-│   ├── src/
-│   │   ├── services/  # DB2 connection logic
-│   │   └── routes/    # REST API endpoints
-├── mock-data/         # JSON Server data
-├── scripts/           # Scripts de desenvolvimento
-└── docs/             # Documentação
-```
-
-### Scripts Disponíveis
-
-#### Frontend
-- `npm run dev` - Servidor de desenvolvimento
-- `npm run build` - Build para produção
-- `npm run start` - Servidor de produção
-
-#### Backend Principal
-- `npm run dev` - Servidor de desenvolvimento (nodemon)
-- `npm run build` - Compilar TypeScript
-- `npm run start` - Servidor de produção
-
-#### DB2 Service
-- `npm run dev` - Servidor de desenvolvimento
-- `npm run build` - Compilar TypeScript
-- `npm run start` - Servidor de produção
-
-#### Scripts de Desenvolvimento
-- `./scripts/start-dev.sh` - Menu interativo para desenvolvimento
-- `docker-compose up db2-service` - Apenas DB2 Service
-- `docker-compose up` - Stack completo
-
-### APIs Disponíveis
-
-#### Health Check
-- `GET /api/health` - Status do servidor
-- `GET /api/health/database` - Status do banco
-
-#### Chat
-- `POST /api/chat/message` - Enviar mensagem
-- `GET /api/chat/sessions/:id` - Obter sessão
-
-#### Sessões
-- `GET /api/sessions` - Listar sessões
-- `POST /api/sessions` - Criar sessão
-- `PUT /api/sessions/:id` - Atualizar sessão
-- `DELETE /api/sessions/:id` - Deletar sessão
-
-## 🔮 Roadmap
-
-### Próximas Funcionalidades
-- [ ] Integração com LLMs reais (OpenAI, Anthropic)
-- [ ] Conexão com DB2 via VPN
-- [ ] Sistema de autenticação
-- [ ] Exportação de resultados (CSV, Excel)
-- [ ] Gráficos e visualizações
-- [ ] Cache de consultas
-- [ ] Logs e analytics
-- [ ] Testes automatizados
-
-### Melhorias Planejadas
-- [ ] Otimização de performance
-- [ ] PWA (Progressive Web App)
-- [ ] Modo offline
-- [ ] Suporte a múltiplos idiomas
-- [ ] API rate limiting
-- [ ] Documentação interativa
-
-## 🤝 Contribuição
-
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
-## 👥 Autores
-
-- **Desenvolvedor Principal** - Implementação inicial
-
-## 🙏 Agradecimentos
-
-- Universidade pela disponibilização dos dados
-- Comunidade open source pelas ferramentas utilizadas
-- Contribuidores e testadores
+</div>
 
 ---
 
-**QueryLab** - Transformando linguagem natural em insights de dados 🚀
+## 💡 The idea
+
+For most people, a relational database is a locked room. The data is all there, but the key is SQL — and learning it just to answer *"how many students enrolled in Computer Science last year?"* is a dealbreaker.
+
+QueryLab hands the key to an LLM. You type the question in Portuguese or English, it writes the SQL, executes it safely, shows the results in a table or chart, and gives you a plain-language summary of what the answer means.
+
+It was built around one hard reality: **LLMs hallucinate table and column names.** So QueryLab first *discovers your real schema*, embeds it, and only feeds the model the parts that matter — which keeps the generated SQL grounded in tables that actually exist.
+
+## ✨ What it does
+
+- 🗣️ **Natural language → SQL** — ask in Portuguese or English, get runnable SQL back.
+- 🧠 **Multi-provider LLM routing** — swap between **Groq**, **Google Gemini**, **OpenRouter** and **Cloudflare Workers AI (SQLCoder)**; each provider sits behind one service interface.
+- 🗺️ **Schema discovery + embeddings** — the app introspects the database, indexes the schema, and a *smart schema reducer* trims it down so even large schemas fit the model's context window.
+- 🧯 **Anti-hallucination safeguards** — generated SQL is validated and common hallucinations are auto-corrected before anything runs.
+- ↔️ **Reverse translation** — after executing, the app explains the result (and the SQL) back in natural language.
+- 📊 **Results that make sense** — formatted tables, charts (**Recharts**), diagrams (**Mermaid** / **React Flow**) and data export.
+- 💬 **Chat sessions over WebSocket** — every conversation is saved, with a full history sidebar you can revisit.
+- 🧪 **Built-in evaluation suite** — a dedicated area and API to score generated SQL against expected results, so changes are measured, not guessed.
+- 📚 **Schema dictionary** — a browsable reference of your tables and columns.
+- 🔐 **Accounts & auth** — register, log in, and keep your sessions private (JWT + bcrypt).
+- 🎨 **Three themes** — light, dark and high-contrast, for comfort and accessibility.
+- 🗄️ **Pluggable databases** — adapters for **PostgreSQL**, **IBM DB2** (via a dedicated microservice) and a mock **JSON Server** for development.
+
+## 🏗️ How it's put together
+
+```
+┌────────────────────────┐      WebSocket + REST      ┌───────────────────────────┐
+│  Frontend — Next.js 15 │  ◀──────────────────────▶  │  Backend — Express + TS   │
+│  React 19 · Tailwind   │                            │  JWT · Prisma · Socket.IO │
+└────────────────────────┘                            └────────────┬──────────────┘
+                                                                   │
+                              ┌────────────────────────────────────┼─────────────────────────────┐
+                              ▼                                    ▼                             ▼
+                     LLM providers                    App DB (Postgres/Prisma)      Query DB adapters
+              Groq · Gemini · OpenRouter                  users, sessions          PostgreSQL · DB2 · JSON
+              Cloudflare AI (SQLCoder)                                                   │
+                                                                                           ▼
+                                                                                  your real data
+```
+
+The npm workspace keeps things tidy: `backend/` and `frontend/` are siblings, and the root scripts run both at once.
+
+## 🧱 Tech stack
+
+| Layer | Choice |
+| --- | --- |
+| Frontend | Next.js 15 (App Router) · React 19 · TypeScript · Tailwind CSS · Radix/shadcn · Zustand · Zod |
+| Charts & diagrams | Recharts · Mermaid · React Flow (`@xyflow/react`) |
+| Backend | Node.js · Express 5 · TypeScript · Socket.IO · Helmet · Morgan |
+| Database | PostgreSQL via **Prisma** (app data) + pluggable query adapters |
+| LLMs | Groq · Google Gemini · OpenRouter · Cloudflare Workers AI · Replicate |
+| Auth | JWT + bcrypt |
+| Deploy | Docker Compose · Render (`render.yaml`) |
+
+## 🚀 Getting started
+
+### Option A — Docker (everything at once)
+
+```bash
+docker compose up
+```
+
+This starts PostgreSQL, the backend API and the Next.js frontend. Then open **http://localhost:3000**.
+
+### Option B — Local development
+
+```bash
+# 1. Install every workspace
+npm install
+
+# 2. Configure the backend  (copy backend/.env.example to backend/.env)
+#    POSTGRES_URL=postgresql://user:pass@localhost:5432/querylab     # app database
+#    JWT_SECRET=...  JWT_EXPIRES_IN=7d
+#    GROQ_API_KEY=...  GEMINI_API_KEY=...  OPENROUTER_API_KEY=...    # pick your LLM provider(s)
+#    QUERY_DB_TYPE=postgres   QUERY_DB_HOST/ PORT/ USER/ PASSWORD    # the database you'll query
+
+# 3. Configure the frontend  (frontend/.env.local)
+#    NEXT_PUBLIC_API_URL=http://localhost:5000/api
+#    NEXT_PUBLIC_WEBSOCKET_URL=http://localhost:5000
+
+# 4. Set up the database
+npx prisma migrate deploy -w backend
+npm run prisma:seed -w backend
+
+# 5. Run backend + frontend together
+npm run dev
+```
+
+Then open **http://localhost:3000**, create a session, and try:
+
+> *"List all federal universities in the South region."*
+> *"How many professors does USP have?"*
+> *"Which Computer Science courses have the highest entry scores?"*
+
+## 📁 Project structure
+
+```
+querylab/
+├── frontend/            # Next.js app (chat, results, schema dictionary, evaluations)
+├── backend/             # Express + TypeScript API
+│   ├── src/routes/      # auth · chat · sessions · history · schema-discovery · evaluation · health
+│   ├── src/services/    # LLM routing, SQL generation, schema reduction, execution, evaluation
+│   ├── src/adapters/    # database adapters: postgres · db2-http · json-server
+│   └── prisma/          # schema, migrations and seed
+├── scripts/             # schema discovery helpers
+├── docker-compose.yml   # postgres + backend + frontend
+└── render.yaml          # one-click deploy blueprint
+```
+
+## 🔌 API highlights
+
+| Area | Endpoints |
+| --- | --- |
+| Health | `GET /api/health` · `GET /api/health/database` |
+| Chat | `POST /api/chat/message` · `GET /api/chat/sessions/:id` |
+| Sessions | `GET/POST /api/sessions` · `PUT/DELETE /api/sessions/:id` |
+| Schema | `/api/schema-discovery` |
+| Evaluation | `/api/evaluation` · `/api/test-results` |
+| History | `/api/history` |
+| Auth | `/api/auth` |
+
+## 👤 Author
+
+**Diovani Facco** — [LinkedIn](https://www.linkedin.com/in/diovani-facco-3a247b11a/) · [diovanifacco@gmail.com](mailto:diovanifacco@gmail.com)
+
+## 📄 License
+
+MIT.
